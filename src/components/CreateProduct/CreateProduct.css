@@ -1,0 +1,78 @@
+.product-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 60px); /* Adjusted for the height of the navbar */
+  margin-top: 60px; /* Offset to account for the navbar */
+}
+
+.product-create-form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+  margin: auto;
+}
+
+.product-create-form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.product-form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.product-form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.product-form-group input,
+.product-form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.product-form-group input:focus,
+.product-form-group select:focus {
+  border-color: #4caf50;
+}
+
+.product-error-message {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.product-submit-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product-submit-button:hover {
+  background-color: #45a049;
+}
+
+@media (max-width: 500px) {
+  .product-create-form {
+    width: 90%;
+  }
+}
