@@ -17,8 +17,8 @@ const Login = () => {
     e.preventDefault();
     setError("");
 
-    const apiKey = "AIzaSyBx3QzAEXrdkq9rpj4yv7Yv-8A-1ozA9LQ"; // Your Firebase API Key
-    const loginUrl = `https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=${apiKey}`;
+    // Your Firebase API Key
+    const loginUrl = `https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyBx3QzAEXrdkq9rpj4yv7Yv-8A-1ozA9LQ`;
 
     try {
       const response = await axios.post(loginUrl, {
